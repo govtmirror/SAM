@@ -21,14 +21,11 @@
   "content_scripts": [
 	   {
 	   "matches": ["https://www.sam.gov/*"],
-	   "css": ["samHelper/samHelper.css", "SamTracker/samtracker.css"],
+	   "css": ["samHelper/samHelper.css"],
 	   "js": [
            "Shared/jquery-1.8.3.min.js",
            "Shared/usdsJsHelper.js",
            "ChromeExtension.adapter/samHelperChromeExt.js",
-           "SamTracker/govxArrow.js",
-           "SamTracker/govxStateMachine.js",
-           "SamTracker/samtracker.js",
            "SamHelper/samHelper.js"
            ]
 	   }
@@ -36,8 +33,6 @@
   "minimum_chrome_version" : "6.0.0.0",
   "manifest_version": 2,
   "web_accessible_resources": [
-      "samHelper/samHelper.html",
-      "SamTracker/samtracker.html",
-      "SamTracker/samscreen.png"
+      "samHelper/samHelper.html"
   ]
 }
